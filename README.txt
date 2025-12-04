@@ -1,0 +1,1 @@
+Unzip and upload files to GitHub repository root. Enable GitHub Pages (branch main, /root).

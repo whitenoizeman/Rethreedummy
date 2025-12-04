@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>คำนวณชิปดัมมี่</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0A84FF">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="logo-wrap">
+      <img src="logo.svg" alt="logo" class="logo">
+      <div class="app-title">คำนวณชิปดัมมี่</div>
+    </div>
+    <button id="themeToggle" class="btn-ghost" aria-label="Toggle theme">🌙</button>
+  </header>
+  <main class="main">
+    <section class="card">
+      <div class="row">
+        <label class="label">คะแนนผู้เล่น</label>
+      </div>
+      <div class="inputs">
+        <div class="field"><label>A</label><input id="playerA" inputmode="numeric" pattern="[0-9.-]*" placeholder="-50"></div>
+        <div class="field"><label>B</label><input id="playerB" inputmode="numeric" pattern="[0-9.-]*" placeholder="120"></div>
+        <div class="field"><label>C</label><input id="playerC" inputmode="numeric" pattern="[0-9.-]*" placeholder="-10"></div>
+      </div>
+      <div class="field"><label>ค่าพูล</label><input id="pool" inputmode="decimal" value="0.05" ></div>
+      <button id="calcBtn" class="btn-primary">คำนวณชิป</button>
+    </section>
+
+    <section class="card" id="resultCard" hidden>
+      <h3>ผลลัพธ์</h3>
+      <div id="resultBody" class="result-body"></div>
+      <h4>การชำระเงิน</h4>
+      <div id="paymentDetails" class="result-body"></div>
+    </section>
+  </main>
+
+  <footer class="footer">เวอร์ชัน PWA • ใช้ง่ายบนมือถือ</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
